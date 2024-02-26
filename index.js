@@ -34,6 +34,14 @@ class Pet {
     this.specie = _specie;
     this.breed = _breed;
   }
+
+  // checkSameOwner(anotherPet) {
+  //   if (this.specie === anotherPet.specie) {
+  //     return true;
+  //   } else {
+  //     return false;
+  //   }
+  // }
 }
 
 const formNode = document.querySelector("#petForm");
