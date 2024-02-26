@@ -8,10 +8,10 @@ class User {
     }
 
     static comparazione(u1, u2) {
-        if(u1 <= u2){
-        console.log (u2 + " è più vecchio che " + u1)
+        if(u1.age <= u2.age){
+        console.log (u2.firstName + " è più vecchia che " + u1.firstName)
         } else{
-            console.log(u1 + " è più vecchio che " + u2)
+            console.log(u1.firstName + " è più vecchia che " + u2.firstName)
         };
         
         };
@@ -19,7 +19,8 @@ class User {
   
   const utente1 = new User("Amanda", "Thomaz", "33", "Rome");
   const utente2 = new User("Maria", "Airam", "26", "Floripa" );
+
   console.log(utente1);
   console.log(utente2);
   
-  User.comparazione(utente1.age, utente2.age);
+  User.comparazione(utente1, utente2);
